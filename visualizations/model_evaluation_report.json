@@ -1,0 +1,27 @@
+{
+    "model": "Random Forest Regressor",
+    "target": "Next-hour CO concentration",
+    "unit": "mg/m3",
+    "forecast_horizon_hours": 1,
+    "training_observations": 6138,
+    "testing_observations": 1535,
+    "random_forest": {
+        "mae": 0.40868716308483405,
+        "rmse": 0.5902555244262797,
+        "r2": 0.8072710437151919
+    },
+    "fair_comparison_observations": 1510,
+    "fair_comparison": {
+        "random_forest": {
+            "mae": 0.4101913100659458,
+            "rmse": 0.5922041248344674,
+            "r2": 0.8055397745210906
+        },
+        "persistence_baseline": {
+            "mae": 0.5148344370860928,
+            "rmse": 0.79678991722124,
+            "r2": 0.6479733129303058
+        }
+    },
+    "mean_residual": -0.06590634292417681
+}
