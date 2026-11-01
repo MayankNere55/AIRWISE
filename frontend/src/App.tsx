@@ -223,19 +223,7 @@ function formatNumber(value: unknown, decimals = 2): string {
       });
 }
 
-function formatDate(value?: string): string {
-  if (!value) return "Unavailable";
 
-  const date = new Date(value);
-
-  return Number.isNaN(date.getTime())
-    ? value
-    : date.toLocaleDateString("en-IN", {
-        day: "2-digit",
-        month: "short",
-        year: "numeric",
-      });
-}
 
 // --------------------------------------------------
 // MAIN APPLICATION
